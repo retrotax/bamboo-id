@@ -18,7 +18,7 @@ module BambooId
       attr_accessor :subdomain
 
       def base_url
-        "https://#{subdomain}.bamboohr.com/token.php?request=token"
+        "https://#{subdomain}.bamboohr.com/token.php?request=token&scope=legacy.login"
       end
 
       def client_secret
